@@ -1,0 +1,144 @@
+/* Contact Section Styles */
+.contact {
+  padding: var(--space-8) 0;
+  background-color: var(--white);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.contact-form-container {
+  position: relative;
+}
+
+.contact-form {
+  background-color: var(--white);
+  padding: var(--space-4);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: var(--space-3);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--gray-800);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(125, 30, 47, 0.2);
+}
+
+.contact-form .btn {
+  width: 100%;
+  margin-top: var(--space-2);
+}
+
+.form-success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.form-success.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form-success h3 {
+  color: var(--primary);
+  margin-bottom: var(--space-2);
+}
+
+.contact-info {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  gap: var(--space-4);
+}
+
+.info-item h3 {
+  color: var(--primary);
+  margin-bottom: var(--space-1);
+  font-size: 1.3rem;
+}
+
+.info-item p {
+  margin-bottom: 8px;
+  color: var(--gray-700);
+}
+
+.info-item p:last-child {
+  margin-bottom: 0;
+}
+
+.map {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.map .btn {
+  margin-top: var(--space-2);
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+  
+  .contact-info {
+    order: -1;
+  }
+}

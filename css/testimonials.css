@@ -1,0 +1,137 @@
+/* Testimonials Section Styles */
+.testimonials {
+  padding: var(--space-8) 0;
+  background-color: var(--gray-100);
+}
+
+.testimonials-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-container {
+  position: relative;
+  min-height: 300px;
+}
+
+.testimonial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.testimonial.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.testimonial-content {
+  background-color: var(--white);
+  padding: var(--space-5);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  text-align: center;
+}
+
+.quote {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  line-height: 0;
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-3);
+  color: var(--primary-light);
+  opacity: 0.1;
+}
+
+.testimonial-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--gray-700);
+  margin-bottom: var(--space-4);
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author {
+  margin-top: var(--space-3);
+}
+
+.testimonial-author h4 {
+  color: var(--primary);
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}
+
+.testimonial-author p {
+  color: var(--gray-500);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.testimonial-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-4);
+}
+
+.testimonial-arrow {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--primary);
+  cursor: pointer;
+  padding: var(--space-1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-arrow:hover {
+  transform: scale(1.2);
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0 var(--space-3);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--gray-300);
+  margin: 0 var(--space-1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--primary);
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background-color: var(--primary-light);
+}
+
+@media (max-width: 767px) {
+  .testimonial-content {
+    padding: var(--space-3);
+  }
+  
+  .testimonial-content p {
+    font-size: 1rem;
+  }
+  
+  .quote {
+    font-size: 3rem;
+  }
+}

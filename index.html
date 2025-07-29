@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masala Magic | Authentic Indian Cuisine</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/testimonials.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="#home">Masala Magic</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="fade-in">Experience Authentic Indian Flavors</h1>
+          <p class="fade-in">Journey through the rich tapestry of Indian cuisine with our carefully crafted dishes</p>
+          <div class="hero-buttons fade-in">
+            <a href="#menu" class="btn btn-primary">View Menu</a>
+            <a href="#contact" class="btn btn-secondary">Book a Table</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <span>Scroll</span>
+        <div class="arrow"></div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-item fade-in">
+            <div class="feature-icon">
+              <img src="https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg" alt="Traditional Spices">
+            </div>
+            <h3>Authentic Spices</h3>
+            <p>Hand-ground spices and traditional masalas for authentic flavors.</p>
+          </div>
+          <div class="feature-item fade-in">
+            <div class="feature-icon">
+              <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg" alt="Fresh Ingredients">
+            </div>
+            <h3>Fresh Ingredients</h3>
+            <p>Locally sourced vegetables and premium quality ingredients.</p>
+          </div>
+          <div class="feature-item fade-in">
+            <div class="feature-icon">
+              <img src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg" alt="Tandoor">
+            </div>
+            <h3>Traditional Tandoor</h3>
+            <p>Authentic clay oven cooking for perfect breads and kebabs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <p>A culinary journey through India's finest dishes</p>
+        </div>
+        
+        <div class="menu-tabs">
+          <button class="menu-tab active" data-category="starters">Starters</button>
+          <button class="menu-tab" data-category="mains">Main Course</button>
+          <button class="menu-tab" data-category="breads">Breads</button>
+          <button class="menu-tab" data-category="desserts">Desserts</button>
+        </div>
+        
+        <div class="menu-content">
+          <div class="menu-category active" id="starters">
+            <div class="menu-items">
+              <div class="menu-item fade-in">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg" alt="Samosa">
+                </div>
+                <div class="menu-item-info">
+                  <div class="menu-item-header">
+                    <h3>Samosa</h3>
+                    <span class="price">₹120</span>
+                  </div>
+                  <p>Crispy pastry filled with spiced potatoes and green peas</p>
+                </div>
+              </div>
+              <div class="menu-item fade-in">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg" alt="Paneer Tikka">
+                </div>
+                <div class="menu-item-info">
+                  <div class="menu-item-header">
+                    <h3>Paneer Tikka</h3>
+                    <span class="price">₹220</span>
+                  </div>
+                  <p>Marinated cottage cheese grilled in tandoor with bell peppers and onions</p>
+                </div>
+              </div>
+              <div class="menu-item fade-in">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2474662/pexels-photo-2474662.jpeg" alt="Chicken Kebab">
+                </div>
+                <div class="menu-item-info">
+                  <div class="menu-item-header">
+                    <h3>Chicken Kebab</h3>
+                    <span class="price">₹280</span>
+                  </div>
+                  <p>Tender chicken pieces marinated in yogurt and spices, cooked in tandoor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="menu-category" id="mains">
+            <div class="menu-items">
+              <div class="menu-item fade-in">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2474663/pexels-photo-2474663.jpeg" alt="Butter Chicken">
+                </div>
+                <div class="menu-item-info">
+                  <div class="menu-item-header">
+                    <h3>Butter Chicken</h3>
+                    <span class="price">₹350</span>
+                  </div>
+                  <p>Tender chicken in rich tomato and butter gravy</p>
+                </div>
+              </div>
+              <div class="menu-item fade-in">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2474664/pexels-photo-2474664.jpeg" alt="Palak Paneer">
+                </div>
+                <div class="menu-item-info">
+                  <div class="menu-item-header">
+                    <h3>Palak Paneer</h3>
+                    <span class="price">₹280</span>
+                  </div>
+                  <p>Cottage cheese cubes in creamy spinach gravy</p>
+                </div>
+              </div>
+              <div class="menu-item fade-in">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2474665/pexels-photo-2474665.jpeg" alt="Dal Makhani">
+                </div>
+                <div class="menu-item-info">
+                  <div class="menu-item-header">
+                    <h3>Dal Makhani</h3>
+                    <span class="price">₹250</span>
+                  </div>
+                  <p>Black lentils slow-cooked with cream and butter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="menu-category" id="breads">
+            <div class="menu-items">
+              <div class="menu-item fade-in">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2474666/pexels-photo-2474666.jpeg" alt="Naan">
+                </div>
+                <div class="menu-item-info">
+                  <div class="menu-item-header">
+                    <h3>Butter Naan</h3>
+                    <span class="price">₹60</span>
+                  </div>
+                  <p>Traditional Indian bread baked in tandoor</p>
+                </div>
+              </div>
+              <div class="menu-item fade-in">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2474667/pexels-photo-2474667.jpeg" alt="Roti">
+                </div>
+                <div class="menu-item-info">
+                  <div class="menu-item-header">
+                    <h3>Tandoori Roti</h3>
+                    <span class="price">₹40</span>
+                  </div>
+                  <p>Whole wheat bread baked in tandoor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="menu-category" id="desserts">
+            <div class="menu-items">
+              <div class="menu-item fade-in">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2474668/pexels-photo-2474668.jpeg" alt="Gulab Jamun">
+                </div>
+                <div class="menu-item-info">
+                  <div class="menu-item-header">
+                    <h3>Gulab Jamun</h3>
+                    <span class="price">₹120</span>
+                  </div>
+                  <p>Deep-fried milk dumplings in sugar syrup</p>
+                </div>
+              </div>
+              <div class="menu-item fade-in">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2474669/pexels-photo-2474669.jpeg" alt="Kheer">
+                </div>
+                <div class="menu-item-info">
+                  <div class="menu-item-header">
+                    <h3>Rice Kheer</h3>
+                    <span class="price">₹100</span>
+                  </div>
+                  <p>Traditional rice pudding with nuts and cardamom</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Story</h2>
+          <p>A legacy of authentic Indian flavors</p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-image fade-in">
+            <img src="https://images.pexels.com/photos/3338537/pexels-photo-3338537.jpeg" alt="Restaurant Interior">
+          </div>
+          <div class="about-text fade-in">
+            <h3>Traditional Excellence</h3>
+            <p>Founded in 2010 by Chef Rajesh Kumar, Masala Magic has been serving authentic Indian cuisine using recipes passed down through generations.</p>
+            <p>Our commitment to traditional cooking methods and use of fresh, hand-ground spices ensures that every dish tells a story of India's rich culinary heritage.</p>
+            <div class="chef-signature">
+              <span>Chef Rajesh Kumar</span>
+              <img src="images/signature.png" alt="Chef's Signature">
+            </div>
+          </div>
+        </div>
+        
+        <div class="team">
+          <h3>Our Culinary Team</h3>
+          <div class="team-members">
+            <div class="team-member fade-in">
+              <div class="team-member-image">
+                <img src="https://images.pexels.com/photos/3338538/pexels-photo-3338538.jpeg" alt="Rajesh Kumar">
+              </div>
+              <h4>Rajesh Kumar</h4>
+              <p>Head Chef</p>
+            </div>
+            <div class="team-member fade-in">
+              <div class="team-member-image">
+                <img src="https://images.pexels.com/photos/3338539/pexels-photo-3338539.jpeg" alt="Priya Sharma">
+              </div>
+              <h4>Priya Sharma</h4>
+              <p>Tandoor Specialist</p>
+            </div>
+            <div class="team-member fade-in">
+              <div class="team-member-image">
+                <img src="https://images.pexels.com/photos/3338540/pexels-photo-3338540.jpeg" alt="Amit Patel">
+              </div>
+              <h4>Amit Patel</h4>
+              <p>Curry Master</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Visual feast of our culinary creations</p>
+        </div>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in">
+            <img src="https://images.pexels.com/photos/3338541/pexels-photo-3338541.jpeg" alt="Biryani">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Hyderabadi Biryani</h3>
+                <p>Aromatic rice dish with tender meat and spices</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item fade-in">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Forders.popskitchen.in%2Fmenu%2Fassorted-veg-tandoori-platter%2F&psig=AOvVaw0Ql5mGX5nsskAsoQB9ixTm&ust=1748858505691000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiQluP7z40DFQAAAAAdAAAAABAE" alt="Tandoori Platter">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Tandoori Platter</h3>
+                <p>Assortment of tandoor-grilled delicacies</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item fade-in">
+            <img src="https://images.pexels.com/photos/3338543/pexels-photo-3338543.jpeg" alt="Thali">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Royal Thali</h3>
+                <p>Complete Indian meal experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Guest Reviews</h2>
+          <p>What our patrons say about us</p>
+        </div>
+        
+        <div class="testimonials-slider">
+          <div class="testimonial-container">
+            <div class="testimonial active">
+              <div class="testimonial-content">
+                <div class="quote">"</div>
+                <p>The most authentic Indian food I've had outside of India. The flavors are perfectly balanced and the service is excellent.</p>
+                <div class="testimonial-author">
+                  <h4>John Smith</h4>
+                  <p>Food Blogger</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <div class="quote">"</div>
+                <p>Amazing variety of vegetarian options. The paneer dishes are outstanding!</p>
+                <div class="testimonial-author">
+                  <h4>Emily Johnson</h4>
+                  <p>Regular Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-controls">
+            <button class="testimonial-arrow prev">
+              <span>&larr;</span>
+            </button>
+            <div class="testimonial-dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+            </div>
+            <button class="testimonial-arrow next">
+              <span>&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact & Reservations</h2>
+          <p>Book your table for an authentic Indian dining experience</p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-form-container fade-in">
+            <form id="reservation-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">Date</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                  <label for="time">Time</label>
+                  <input type="time" id="time" name="time" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Select</option>
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5 people</option>
+                  <option value="6">6 people</option>
+                  <option value="7+">7+ people</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Book Now</button>
+            </form>
+          </div>
+          
+          <div class="contact-info fade-in">
+            <div class="info-item">
+              <h3>Hours</h3>
+              <p><strong>Lunch:</strong> 12:00 PM - 3:00 PM</p>
+              <p><strong>Dinner:</strong> 6:30 PM - 11:00 PM</p>
+              <p><strong>Open:</strong> All days</p>
+            </div>
+            <div class="info-item">
+              <h3>Location</h3>
+              <p>123 Spice Street</p>
+              <p>New Delhi, 110001</p>
+              <p>India</p>
+            </div>
+            <div class="info-item">
+              <h3>Contact</h3>
+              <p>Phone: +91 98765 43210</p>
+              <p>Email: info@masalamagic.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#home">Masala Magic</a>
+          <p>Authentic Indian Cuisine</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Connect With Us</h4>
+            <ul class="social-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Subscribe for special offers and updates</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Masala Magic. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
