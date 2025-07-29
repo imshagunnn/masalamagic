@@ -18,7 +18,7 @@ Welcome to **Masala Magic** – a modern and vibrant restaurant website built to
 
 ## 🛠️ Tech Stack  
 - **Frontend:** HTML5, CSS3, JavaScript  
-- **Styling:** CSS animations / Bootstrap (if used)  
+- **Styling:** CSS animations   
 - **Hosting:** Netlify  
 
 ---
